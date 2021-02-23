@@ -16,6 +16,10 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{ /* menu lateral */
     width: 2rem;
     height: 2rem;
@@ -180,6 +184,7 @@ header{ /* cabeçalho da pagina */
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -324,6 +329,11 @@ header{ /* cabeçalho da pagina */
 
 /* Projetos */
 
+.sessao-projetos{
+    width: 100%;
+    height: 100vh;
+}
+
 .projetos{
     display: flex;
     justify-content: space-evenly;
@@ -397,6 +407,7 @@ header{ /* cabeçalho da pagina */
     border-radius: 0.5rem;
     border: none;
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 .card-info button{
@@ -579,4 +590,54 @@ header{ /* cabeçalho da pagina */
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+/* Rodapé */
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #2b2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #eee;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    background: #0575E6;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.1rem 0.6rem #00000009;
 }
