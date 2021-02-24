@@ -311,7 +311,7 @@ header{ /* cabeçalho da pagina */
     padding-left: 1rem;
 }
 
-.conhecimento-text{
+.conhecimento-text p{
     font-family: var(--font-secundary);
     margin-top: 1rem;
 }
